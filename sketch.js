@@ -32,7 +32,7 @@ function setup() {
 }
 
 function draw() {
-  //background(0);
+  background(255);
 
   imageMode(CENTER);
   back = image(backGroundImg,0,0,2550,1500);
