@@ -32,17 +32,17 @@ function setup() {
 
   superHero = new createHero(300,400,100);
 
-  for(var i = 300; i < 307; i++) {
+  for(let i = 300; i < 307; i++) {
     blocks.push(new Block(500,i));
   }
 
-  for(var i = 300; i < 306; i++) {
+  for(let i = 300; i < 306; i++) {
     blocks.push(new Block(550,i));
   }
-  for(var i = 300; i < 308; i++) {
+  for(let i = 300; i < 308; i++) {
     blocks.push(new Block(600,i));
   }
-  for(var i = 300; i < 305; i++) {
+  for(let i = 300; i < 305; i++) {
     blocks.push(new Block(650,i));
   }
 
@@ -65,7 +65,7 @@ function draw() {
 
   push();
   
-  for(var i =0; i < blocks.length; i++) {
+  for(let i =0; i < blocks.length; i++) {
     blocks[i].display();
   }
 
