@@ -11,6 +11,8 @@ var superHero;
 
 var blocks = [];
 
+var monster1;
+
 function preload() {
 //preload the images here
 backGroundImg = loadImage("images/GamingBackground.png");
@@ -26,13 +28,25 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  ground1 = new createGround(300,600,1000,10);
+  ground1 = new createGround(300,600,1200,10);
 
-  superHero = new createHero(300,400,70);
+  superHero = new createHero(300,400,100);
 
-  for(var i = 100; i < 107; i++) {
+  for(var i = 300; i < 307; i++) {
     blocks.push(new Block(500,i));
   }
+
+  for(var i = 300; i < 306; i++) {
+    blocks.push(new Block(550,i));
+  }
+  for(var i = 300; i < 308; i++) {
+    blocks.push(new Block(600,i));
+  }
+  for(var i = 300; i < 305; i++) {
+    blocks.push(new Block(650,i));
+  }
+
+  monster1 = new createMonster(800,200,200,200);
 
 //Engine.run(engine);
 }
@@ -57,6 +71,8 @@ function draw() {
 
   //for(var i =0; i )
   pop();
+
+  monster1.display();
 
 }
 

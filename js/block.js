@@ -1,7 +1,7 @@
 class Block {
     constructor(x,y) {
         var physics = {
-            restitution: 0.8,
+            restitution: 0.5,
             friction: 1,
             density:20,
         }
