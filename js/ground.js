@@ -12,6 +12,7 @@ class createGround {
     display() {
         var pos = this.body.position;
         rectMode(CENTER);
+        fill("fff");
         rect(pos.x,pos.y,this.w,this.h);
     }
 }
